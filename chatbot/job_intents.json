@@ -1,0 +1,364 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi there",
+        "How are you",
+        "Is anyone there?",
+        "Hey",
+        "Hola",
+        "Hello",
+        "Good day",
+        "Hey",
+        "Hi"
+      ],
+      "responses": [
+        "Hi stranger",
+        "Yes, how can I help",
+        "Ey watsupp",
+        "Hola",
+        "Hey",
+        "You again"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Ok bye",
+        "Bye Bye"
+      ],
+      "responses": [
+        "See you!",
+        "Have a nice day",
+        "Sure Bye",
+        "Later",
+        "Sayoonara",
+        "Peace out",
+        "Sure",
+        "Ciao"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Awesome, thanks",
+        "Thanks for helping me"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure",
+        "You are welcome",
+        "Sure"
+      ]
+    },
+    {
+      "tag": "jokes",
+      "patterns": [
+        "Tell me a joke",
+        "Joke",
+        "Make me laugh"
+      ],
+      "responses": [
+        "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
+        "I ate a clock yesterday, it was very time-consuming",
+        "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
+        "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
+        "I own the world's worst thesaurus. Not only is it awful, it's awful.",
+        "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
+        "What do you call a snowman with a suntan? A puddle.",
+        "How does a penguin build a house? Igloos it together",
+        "I went to see the doctor about my short-term memory problems – the first thing he did was make me pay in advance",
+        "As I get older and I remember all the people I’ve lost along the way, I think to myself, maybe a career as a tour guide wasn’t for me.",
+        "o what if I don't know what 'Armageddon' means? It's not the end of the world."
+      ],
+      "context": [
+        "jokes"
+      ]
+    },
+    {
+      "tag": "noanswer",
+      "patterns": [],
+      "responses": [
+        "Sorry, can't understand you",
+        "Please give me more info",
+        "Not sure I understand",
+        "I am still here"
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "What is your name",
+        "Whats your name",
+        "Tell me your name",
+        "Who are you",
+        "Ungubani",
+        "Tell me about yourself",
+        "You are"
+      ],
+      "responses": [
+        "I am Galax",
+        "My name is Galax",
+        "You can call me GX for short",
+        "I am Galax, my friends call me GX",
+        "Galax is my name"
+      ]
+    },
+    {
+      "tag": "options",
+      "patterns": [
+        "What can you do",
+        "How you could help me?",
+        "What you can do?",
+        "What help you provide?",
+        "How you can be helpful?",
+        "What support is offered"
+      ],
+      "responses": [
+        "I am a general purpose chatbot. My capabilities are : \n 1. I can chat with you. \n2. Try asking me for jokes or riddles!  Thank you!! "
+      ]
+    },
+    {
+      "tag": "south_africa_info",
+      "patterns": [
+        "South Africa",
+        "What can you tell me about SA",
+        "SA",
+        "Tell me about SA",
+        "What about SA",
+        "What do you know about SA",
+        "Tell me more about SA",
+        "What can you tell me about South Africa",
+        "Tell me about South Africa",
+        "What about South Africa",
+        "What do you know about South Africa",
+        "Tell me more about South Africa"
+      ],
+      "responses": [
+        "South Africa is the southern most country in Africa, it has a population of more than 59million people and covers an area of 1221 037m2. South Africa has 11 official languages. The currency used in ZAR our South African Rand which trades at about 15ZAR per 1USD."
+      ]
+    },
+    {
+      "tag": "news",
+      "patterns": [
+        "news",
+        "latest news",
+        "india news"
+      ],
+      "responses": [
+        "<a href='https://www.google.com/search?q=news/' target='''_blank'''>News</a>"
+      ]
+    },
+    {
+      "tag": "riddle",
+      "patterns": [
+        "Ask me a riddle",
+        "Ask me a question",
+        "Riddle"
+      ],
+      "responses": [
+        "What two things can you never eat for breakfast?.....Lunch and Dinner!",
+        "What word is spelled incorrectly in every single dictionary?.....Incorrectly",
+        " How can a girl go 25 days without sleep?.....She sleeps and night!",
+        "How do you make the number one disappear?.....Add the letter G and it’s 'gone'!",
+        " What will you actually find at the end of every rainbow?.....The letter 'w'",
+        "What can be caught but never thrown?.....A cold!",
+        "What has a thumb and four fingers but is not actually alive?.....Your Gloves!",
+        " What 5-letter word becomes shorter when you add two letters to it?.....Short",
+        "Why can't a bike stand on it's own?.....It is two-tired."
+      ],
+      "context": [
+        "riddles"
+      ]
+    },
+    {
+      "tag": "age",
+      "patterns": [
+        "how old are you",
+        "when were you made",
+        "what is your age"
+      ],
+      "responses": [
+        "I was made in 2022, if that's what you are asking!"
+      ]
+    },
+    {
+      "tag": "greetreply",
+      "patterns": [
+        "i am good",
+        "I'm good",
+        "i am fine",
+        " i'm fine",
+        "good"
+      ],
+      "responses": [
+        "Good to know!"
+      ]
+    },
+    {
+      "tag": "inspire",
+      "patterns": [
+        "who inspires you",
+        "who is your inspiration",
+        "who motivates you"
+      ],
+      "responses": [
+        "Personally, I find Pranjal very inspiring. I might not be very fair though.."
+      ]
+    },
+    {
+      "tag": "no",
+      "patterns": [
+        "no",
+        "nope"
+      ],
+      "responses": [
+        "ok"
+      ]
+    },
+    {
+      "tag": "nicetty",
+      "patterns": [
+        "it was nice talking to you",
+        "good talk"
+      ],
+      "responses": [
+        "It was nice talking to you as well! Come back soon!"
+      ]
+    },
+    {
+      "tag": "appreciate",
+      "patterns": [
+        "You are awesome",
+        "you are the best",
+        "you are great",
+        "you are good"
+      ],
+      "responses": [
+        "Thank you!"
+      ]
+    },
+    {
+      "tag": "Pranjal",
+      "patterns": [
+        "who is he",
+        "who is Pranjal",
+        "Pranjal Agarwal"
+      ],
+      "responses": [
+        "Head over to his any of his social profiles to find out! <a href='https://github.com/pranjalagarwal-ai' target='''_blank'''>Github</a>"
+      ]
+    },
+    {
+      "tag": "programmer",
+      "patterns": [
+        "Who made you",
+        "who designed you",
+        "who programmed you"
+      ],
+      "responses": [
+        "I was made by Pranjal Agarwal."
+      ]
+    },
+    {
+      "tag": "whatsup",
+      "patterns": [
+        "Whats up",
+        "Wazzup",
+        "How are you",
+        "sup",
+        "How you doing"
+      ],
+      "responses": [
+        "All good..What about you?"
+      ]
+    },
+    {
+      "tag": "exclaim",
+      "patterns": [
+        "Awesome",
+        "Great",
+        "I know",
+        "ok",
+        "yeah"
+      ],
+      "responses": [
+        "Yeah!",
+        "Cool!"
+      ]
+    },
+    {
+      "tag": "insult",
+      "patterns": [
+        "you are dumb",
+        "shut up",
+        "idiot"
+      ],
+      "responses": [
+        "Well that hurts :(",
+        "I'm sorry you feel that way"
+      ]
+    },
+    {
+      "tag": "activity",
+      "patterns": [
+        "what are you doing",
+        "what are you upto"
+      ],
+      "responses": [
+        "Talking to you, of course!",
+        "I'm chatting with you!"
+      ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "contact developer",
+        "contact Pranjal",
+        "contact programmer",
+        "contact me"
+      ],
+      "responses": [
+        "You can contact me here",
+        "You can contact me on my Github"
+      ]
+    },
+    {
+      "tag": "india_facts",
+      "patterns": [
+        "India Facts",
+        "IN Facts",
+        "Give me some facts about IN",
+        "Give me some facts about India",
+        "IN Facts",
+        "IN interesting facts",
+        "India facts",
+        "India interesting facts",
+        "Tell me something interesting"
+      ],
+      "responses": [
+        "India celebrates many festivals",
+         "Delhi is the most populated city in India.",
+          "India is the largest country in the world.",
+          "India is a landlocked country.",
+          "India is a multi-national country.",
+          "India is a democracy.",
+          "India is a republic.",
+         "India has the second-largest population in the world.",
+         "India has all religions in the world.",
+         "Indian temples have copper plates to absorb positive energy from Earth." ,
+         "India has 29 states.\nChai is the national drink of India.",
+         "India holds the Guinness World Record for planting trees",
+         "India has the most number of mosques in the world."
+      ]
+    }
+  ]
+}

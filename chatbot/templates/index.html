@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Galax</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <style>
+    #submit-button {
+      background-color: rgb(43, 43, 67);
+      color: white;
+      border-radius: 8px
+    }
+
+    #response {
+      font-weight: 600;
+      font-size: 14px;
+      display: inline-table;
+      padding: 0 0 0 15px;
+      margin: 0 0 4px 0;
+      color: whitesmoke;
+      background-color: rgb(42, 11, 45);
+      border-radius: 20px;
+      padding: 10px;
+    }
+
+    span {
+      color: #b3b3b3;
+      overflow: hidden;
+
+    }
+  </style>
+</head>
+
+<body style="background-color: #070707;">
+  <div class="container" style="width:70%;">
+    <h1 style="color:rgb(219, 232, 243);text-align: center;
+    color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue">Galax Chatbot</h1>
+    <br>
+    <hr>
+    <br>
+    <div style="float:none;" class="row">
+      <div class="col-lg-9">
+        <input class="form-control" type="text" name="question" id="question">
+      </div>
+      <div class="col-lg-3">
+        <button class="btn btn-block" id="submit-button">Send</button>
+
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col">
+        <span id="response">Chat Appear Here
+          <hr>
+        </span>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="/static/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+
+  <script>
+
+
+    jQuery(document).ready(function () {
+
+      $("#submit-button").click(function (e) {
+        e.preventDefault();
+
+        $.ajax({
+          type: "POST",
+          url: "/chatbot",
+          data: {
+            question: $("#question").val()
+          },
+          success: function (result) {
+            $("#response").append("<br>Me: " + $("#question").val() + "<br> <em>Galax:</em> " + result.response);
+            $("#question").val("")
+          },
+          error: function (result) {
+            alert('error');
+          }
+        });
+
+      });
+
+    });
+
+
+  </script>
+
+</body>
+
+</html>
